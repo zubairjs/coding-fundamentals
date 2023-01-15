@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My HTML List</title>
+		<meta
+			name="keywords"
+			content="Basic lists of interests and JavaScript frameworks"
+		/>
+		<meta name="author" content="Zubair Jamil" />
+		<style>
+			body {
+				font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+				font-size: 20px;
+			}
+
+			main {
+				margin: 30px auto;
+				width: 700px;
+			}
+
+			.frameworks-list {
+				background-image: url(https://blog.vilmatech.com/wp-content/uploads/2019/05/svelte-vs-angular-vs-vue.jpg);
+				background-repeat: no-repeat;
+				background-position-y: center;
+				background-size: contain;
+			}
+
+			hr {
+				width: 80%;
+				margin: 35px auto;
+			}
+
+			.frameworks-list h2 {
+				text-align: center;
+			}
+
+			.box {
+				background-color: #ffffff;
+				opacity: 0.9;
+			}
+
+			.description {
+				list-style-type: "\270E  ";
+			}
+
+			a {
+				text-decoration: none;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Zubair Jamil</h1>
+			</header>
+
+			<section>
+				<h2>My Interests</h2>
+
+				<ol>
+					<li>Reading</li>
+					<li>Coding</li>
+					<li>Writing</li>
+				</ol>
+			</section>
+
+			<hr />
+
+			<section class="frameworks-list">
+				<div class="box">
+					<h2>JavaScript Frameworks</h2>
+
+					<ul>
+						<li>
+							<h3>Vue.js</h3>
+
+							<ul class="description">
+								<li>The Progressive JavaScript Framework</li>
+								<li>
+									Vue (pronounced /vju:/, like <strong>view</strong>) is a
+									JavaScript framework for building user interfaces.<br />
+									It builds on top of standard HTML, CSS, and JavaScript and
+									provides a declarative and component-based programming model
+									that helps you efficiently develop user interfaces, be they
+									simple or complex.
+								</li>
+								<li>
+									<a href="https://vuejs.org/" target="_blank"
+										>Official website</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<h3>Angular</h3>
+
+							<ul class="description">
+								<li>The web development framework for building the future</li>
+								<li>
+									Angular is an application-design framework and development
+									platform for creating efficient and sophisticated single-page
+									apps.
+								</li>
+								<li>
+									<a href="https://angular.io/" target="_blank"
+										>Official website</a
+									>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<h3>Svelte</h3>
+
+							<ul class="description">
+								<li>
+									Svelte is a radical new approach to building user interfaces.
+								</li>
+								<li>
+									Whereas traditional frameworks like React and Vue do the bulk
+									of their work in the browser, Svelte shifts that work into a
+									compile step that happens when you build your app.
+								</li>
+								<li>
+									<a href="https://svelte.dev/" target="_blank"
+										>Official website</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

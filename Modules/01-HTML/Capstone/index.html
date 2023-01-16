@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Porfolio Page</title>
+		<meta name="keywords" content="A simple about me page" />
+		<meta name="author" content="Zubair Jamil" />
+		<style>
+			html {
+				box-sizing: border-box;
+			}
+
+			body {
+				width: 600px;
+				margin: 0 auto;
+				font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+					"Lucida Sans", Arial, sans-serif;
+				color: #333;
+			}
+
+			h1 {
+				border-bottom: 3px double #aaa;
+			}
+
+			h2 {
+				padding: 10px 0;
+				border-bottom: 1px solid #aaa;
+			}
+
+			.bio th {
+				text-align: left;
+			}
+
+			label {
+				display: block;
+				padding: 8px 0;
+				font-weight: bold;
+			}
+
+			input,
+			textarea,
+			button[type="submit"] {
+				padding: 10px 0 10px 5px;
+				width: 100%;
+			}
+
+			button[type="reset"] {
+				color: red;
+				font-weight: bold;
+			}
+
+			form div,
+			button {
+				margin: 10px 0;
+			}
+
+			footer {
+				margin: 245px 0 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Zubair Jamil</h1>
+
+			<nav>
+				<p><b>Navigation Links</b></p>
+				<ul>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#about-me">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h2 id="profile">Profile</h2>
+				<table>
+					<tr>
+						<td>
+							<img
+								src="https://media.istockphoto.com/vectors/default-placeholder-profile-icon-vector-id666545204?k=6&m=666545204&s=612x612&w=0&h=l8d6WSfkNUiP6teqk_LGhuH5XhuTKz3prpONao9DjDM="
+								alt="Profile picture placeholder."
+								height="180"
+							/>
+						</td>
+
+						<td>
+							<table class="bio">
+								<tr>
+									<th>Name</th>
+									<td>:</td>
+									<td>Zubair Bin Jamil</td>
+								</tr>
+								<tr>
+									<th>Email</th>
+									<td>:</td>
+									<td>
+										<a href="mailto:theofficialzubair@gmail.com"
+											>theofficialzubair@gmail.com</a
+										>
+									</td>
+								</tr>
+								<tr>
+									<th>Phone Number</th>
+									<td>:</td>
+									<td><a href="tel:+6014-5222413">014-5222413</a></td>
+								</tr>
+								<tr>
+									<th>Website</th>
+									<td>:</td>
+									<td>
+										<a href="https://github.com/zubairjs/" target="_blank"
+											>GitHub</a
+										>
+									</td>
+								</tr>
+								<tr>
+									<th>Location</th>
+									<td>:</td>
+									<td>Selangor, Malaysia</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</section>
+
+			<section id="about-me">
+				<h2>About Me</h2>
+				<p>
+					Hi there! I'm Zubair Jamil, a full-time Software Development student
+					at
+					<a href="https://sigmaschool.co/about-us" target="_blank"
+						>Sigma School</a
+					>.
+				</p>
+				<p>
+					I'm a graduate of
+					<a href="https://medicine.cu.edu.eg/index.php/en/" target="_blank"
+						>Kasr Al-Ainy School of Medicine at Cairo University</a
+					>, Egypt but currently I'm pursuing my dream of becoming a full-stack
+					software developer.
+				</p>
+				<p>
+					I have self-taught myself coding for a few weeks before I decided that
+					I need a platform where I can network with interesting, like-minded
+					people and more importantly, have feedbacks from actual self-taught
+					developers to complement my learning experience and speed up my
+					learning curve. Getting on board with the online school so far have
+					opened me doors I never knew existed and have motivated me to
+					discipline myself with my coding journey.
+				</p>
+				<p>
+					Outside of coding, I love reading books, online articles, blogs,
+					portals etc. Basically, if it have words in it, I will probably take a
+					peek at it. I also consider myself an amateur food critique. I just
+					love getting food recommedations from my friends and family.
+				</p>
+			</section>
+
+			<section id="contact">
+				<h2>Contact Me</h2>
+				<form action="#">
+					<div>
+						<label for="first-name">First Name:</label>
+						<input
+							id="first-name"
+							name="first-name"
+							type="text"
+							placeholder="John *"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="last-name">Last Name:</label>
+						<input
+							id="last-name"
+							name="last-name"
+							type="text"
+							placeholder="Doe *"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="email">Email:</label>
+						<input
+							id="email"
+							name="email"
+							type="email"
+							placeholder="john.doe@example.com *"
+							required
+						/>
+					</div>
+
+					<div>
+						<label for="phone-no">Phone number:</label>
+						<input
+							id="phone-no"
+							name="phone-no"
+							type="tel"
+							placeholder="+6012-3456789"
+						/>
+					</div>
+
+					<div>
+						<label for="message">Message:</label>
+						<textarea
+							id="message"
+							name="message"
+							id=""
+							cols="30"
+							rows="10"
+							placeholder="Enter your message... *"
+							required
+						></textarea>
+					</div>
+
+					<button type="submit"><b>Send</b></button>
+					<button type="reset">Clear</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p><small>&copy; 2023 Zubair Jamil</small></p>
+		</footer>
+	</body>
+</html>

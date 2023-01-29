@@ -1,0 +1,22 @@
+.breadcrumb {
+	padding: 1rem;
+	background-color: #f7f6f6;
+	list-style-type: none;
+	font-family: "Cormorant Infant", serif;
+	font-weight: bold;
+}
+
+.breadcrumb li {
+	display: inline-block;
+}
+
+.breadcrumb li a {
+	color: #017698;
+}
+
+/* For all list elements except for 1st one */
+.breadcrumb li + li::before {
+	content: "/";
+	padding: 0.45em;
+	color: black;
+}

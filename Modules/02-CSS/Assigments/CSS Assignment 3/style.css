@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	color: #28384a;
+}
+
+.menu {
+	display: inline-block;
+	position: relative;
+	padding: 0.8rem 1.6rem;
+}
+
+.menu:hover,
+.menu:hover > span {
+	background-color: #28384a;
+	color: #e7e7e7;
+}
+
+.submenu {
+	display: none;
+}
+
+.menu,
+.submenu {
+	box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+	background-color: #f9f9f9;
+}
+
+.menu:hover .submenu {
+	/* Show hidden .submenu on .menu hover */
+	display: block;
+	position: absolute;
+	top: 2.5em;
+	left: 1em;
+}
+
+.submenu a {
+	text-decoration: none;
+}
+
+.submenu-item {
+	display: block;
+	padding: 0.8em 1.6em;
+}
+
+.submenu-item:hover {
+	background-color: #28384a;
+	color: #e7e7e7;
+}

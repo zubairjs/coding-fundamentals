@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox Assignment 1 - Build a Blog Section</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo">
+				<a href="#">
+					<img src="./images/logo.png" alt="Brand logo" />
+				</a>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="#articles">Articles</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li></li>
+				</ul>
+			</nav>
+
+			<div class="menu">
+				<a href="#">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="48"
+						width="48"
+						fill="#eee"
+					>
+						<path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
+					</svg>
+				</a>
+			</div>
+		</header>
+
+		<main>
+			<div class="hero-wrapper">
+				<div class="hero">
+					<header>
+						<h1 class="hero-title">Tech Blogs</h1>
+						<p class="hero-subtitle">
+							Read about technology, programming, personal growth and topics
+							that will help you in your career and life in general.
+						</p>
+					</header>
+					<div class="hero-img-container">
+						<img class="hero-img" src="./images/typewriter.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div id="articles" class="card-wrapper">
+				<div class="cards">
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/an-elderly-man-using-laptop.jpeg"
+									alt="elderly man in glass using laptop on a desk"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Technology</a>
+								<a href="#" class="tag">Programming</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>How everyone can benefits from learning to program</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">30/01/2023 10:14AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#">
+								<img
+									src="./images/yelling-formal-man-watching-news-on-laptop.jpeg"
+									alt="man in glass yelling in front of a laptop"
+								/>
+							</a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Technology</a>
+								<a href="#" class="tag">Web Development</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>4 Common mistakes to avoid while developing websites</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">25/01/2023 11:03AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/close-up-side-profile-photo-guy-brainstorming-briefing-coder-typing.jpg"
+									alt="a man in front of two monitors with hands on keyboard and mouse"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Technology</a>
+								<a href="#" class="tag">Programming</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>5 Steps to simplify learning a new programming language</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">23/01/2023 10:12AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/businessman-hugging-laptop.jpg"
+									alt="a man with glass holding a laptop while standing"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Personal Development</a>
+								<a href="#" class="tag">Education</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#">How to stay accountable in your learning goals</a>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">18/01/2023 09:29AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#">
+								<img
+									src="./images/man-sitting-speaking-in-public.jpg"
+									alt="a man speaking with a microphone while sitting"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Personal Development</a>
+								<a href="#" class="tag">Soft Skills</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>Essential soft skills on demand to get a job in tech in
+										2023</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">16/01/2023 10:02AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/business-man-working-on-a-laptop.jpg"
+									alt="a man working with laptop and a cup of coffee on a desk"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Careers</a>
+								<a href="#" class="tag">Web Development</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>Use these 5 details to include in your personal website</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">11/01/2023 10:22AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/enjoying-a-break-from-work-entrepreneur-sitting-with-hands-behind-his-head-drinking-coffee.jpg"
+									alt="man on a break with a cup of drink in front of a laptop"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Programming</a>
+								<a href="#" class="tag">Education</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>These signs shows you are probably ready to learn a new
+										language</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">09/01/2023 10:42AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/two-men-looking-at-a-laptop.jpeg"
+									alt="one man teaching to another man in front of computers"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Programming</a>
+								<a href="#" class="tag">Personal Development</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#"
+										>How coding mentor can help you in your programming
+										journey</a
+									>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">04/01/2023 09:31AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img-container">
+							<a href="#"
+								><img
+									src="./images/html-codes-on-a-screen.jpg"
+									alt="computer codes on a screen"
+							/></a>
+						</div>
+
+						<div class="content">
+							<div class="tags">
+								<a href="#" class="tag">Technology</a>
+								<a href="#" class="tag">Web Development</a>
+							</div>
+
+							<div class="card-title-container">
+								<h3 class="card-title">
+									<a href="#">5 Reasons why you should learn HTML</a>
+								</h3>
+							</div>
+
+							<div class="details">
+								<div class="author">
+									<a href="#"><img src="./images/logo.png" alt="" /></a>
+									<p>
+										<a href="#">Zubair Jamil</a>
+									</p>
+								</div>
+
+								<p class="time-stamp">
+									<time datetime="2023-02-05">02/01/2023 10:40AM</time>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p><small>© 2023 Zubair Jamil</small></p>
+		</footer>
+	</body>
+</html>

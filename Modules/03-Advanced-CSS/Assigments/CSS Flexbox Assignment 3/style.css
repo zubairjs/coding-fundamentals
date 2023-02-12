@@ -1,0 +1,90 @@
+:root {
+	--grey: #777;
+	--purple: #700548;
+}
+
+html {
+	font: 100% "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: #fefefe;
+}
+
+main {
+	height: 100vh;
+	background-color: var(--purple);
+}
+
+footer {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	padding: 1em;
+	color: var(--grey);
+}
+
+footer nav {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+footer nav * {
+	margin: 0;
+	padding: 0;
+}
+
+.site-link a {
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--grey);
+}
+
+.site-link a:hover {
+	color: var(--purple);
+}
+
+.site-link ul,
+.social-link ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	row-gap: 2rem;
+	column-gap: 4rem;
+	list-style: none;
+}
+
+.social-link svg {
+	width: 1.5rem;
+	color: var(--grey);
+}
+
+.facebook-link svg:hover {
+	color: #475993;
+}
+
+.twitter-link svg:hover {
+	color: #4f80ff;
+}
+
+.instagram-link svg:hover path {
+	fill: url("#lBUZjvXyx");
+}
+
+.dribble-link svg:hover {
+	color: #cc377e;
+}
+
+.github-link svg:hover {
+	color: #2d2d2d;
+}
+
+.copyright p {
+	font-weight: 700;
+}

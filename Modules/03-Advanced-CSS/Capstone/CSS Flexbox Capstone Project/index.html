@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Flexbox Capstone Project - Build a Contact Page</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="logo-nav-container">
+				<div class="logo">
+					<a href="index.html">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 64 64"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+						>
+							<title>Zzone</title>
+							<path
+								data-name="layer1"
+								d="M63.917 25.2a1.442 1.442 0 0 0-1.1-.9L42.2 22.4 33.3 2.8a1.3 1.3 0 0 0-2.4 0L21.692 22 1.179 24.3a1.172 1.172 0 0 0-1.1.9 1.281 1.281 0 0 0 .4 1.4l15.109 13.9-3.7 20.9a1.552 1.552 0 0 0 .5 1.4 1.079 1.079 0 0 0 .8.2 1.856 1.856 0 0 0 .7-.2L32.3 52.2l18.109 10.7a2 2 0 0 0 1.5-.2 1.3 1.3 0 0 0 .5-1.3l-2.7-15.5a13.217 13.217 0 0 0 4-2.6 23.5 23.5 0 0 1-4.3 1.3c-12.207 2.3-30.819.4-31.519.3l20.51-15c-6.9-1.3-23.014-1.8-24.015-1.8.8-.1 21.813-3.6 34.021-.1L27.6 42.5s15.91 1.5 21.513.9l-.4-2.9 15.004-13.9a1.642 1.642 0 0 0 .2-1.4z"
+								fill="#e54177"
+							></path>
+						</svg>
+					</a>
+				</div>
+
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Partners</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="cta-link">
+				<ul>
+					<li><a href="#" class="sign-in">Sign in</a></li>
+					<li><a href="#" class="sign-up">Sign up</a></li>
+				</ul>
+			</div>
+
+			<div class="menu-button">
+				<a href="#">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="48"
+						width="48"
+						fill="#fefefe"
+					>
+						<path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"></path>
+					</svg>
+				</a>
+			</div>
+		</header>
+
+		<main>
+			<header class="main-header">
+				<h1 class="heading">Get in Touch</h1>
+				<p class="sub-heading">
+					For more information about our works or to discuss potential
+					collaboration, get in touch with one of our representative, or you can
+					directly send us a message below, or you can do both if you like (we
+					don't judge people here).
+				</p>
+			</header>
+
+			<div class="contact-wrapper">
+				<section class="contact-info">
+					<h2>Contact Information</h2>
+					<p>
+						If you have any questions or in need of any kind of assistance,
+						please don't hesitate to reach us by any means stated here. We do
+						our best to respond within 1 business day.
+					</p>
+
+					<div class="contact-channel">
+						<ul>
+							<li class="phone">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 64 64"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									class="phone-idle"
+								>
+									<title>Calls</title>
+									<path
+										data-name="layer1"
+										d="M48.5 40.2a4.8 4.8 0 0 0-6.5 1.3c-2.4 2.9-5.3 7.7-16.2-3.2S19.6 24.4 22.5 22a4.8 4.8 0 0 0 1.3-6.5L17 5.1c-.9-1.3-2.1-3.4-4.9-3S2 6.6 2 15.6s7.1 20 16.8 29.7S39.5 62 48.4 62s13.2-8 13.5-10-1.7-4-3-4.9z"
+										fill="currentColor"
+									></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 64 64"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									class="phone-call"
+								>
+									<title>Call us here</title>
+									<path
+										data-name="layer2"
+										d="M49.4 50.3l-8.8-5.8a4.1 4.1 0 0 0-5.6 1.1c-2 2.5-4.5 6.6-13.8-2.8S15.9 31 18.4 29a4.1 4.1 0 0 0 1.1-5.5l-5.8-8.8c-.8-1.1-1.8-2.9-4.2-2.6S1 15.9 1 23.5s6 17 14.2 25.2S32.8 63 40.5 63s11.2-6.8 11.5-8.5-1.5-3.5-2.6-4.2z"
+										fill="currentColor"
+									></path>
+									<path
+										data-name="layer1"
+										d="M29 1a2 2 0 0 0 0 4 30 30 0 0 1 30 30 2 2 0 1 0 4 0A34 34 0 0 0 29 1z"
+										fill="currentColor"
+									></path>
+									<path
+										data-name="layer1"
+										d="M29 11a2 2 0 1 0 0 4 20 20 0 0 1 20 20 2 2 0 1 0 4 0 24 24 0 0 0-24-24z"
+										fill="currentColor"
+									></path>
+									<path
+										data-name="layer1"
+										d="M38 35a2 2 0 1 0 4 0 13 13 0 0 0-13-13 2 2 0 0 0 0 4 9 9 0 0 1 9 9z"
+										fill="currentColor"
+									></path>
+								</svg>
+								<a href="tel:+601300882525">
+									<span>+601300882525</span>
+								</a>
+							</li>
+
+							<li class="mail">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 64 64"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									class="mail-idle"
+								>
+									<title>Mail</title>
+									<path
+										data-name="layer1"
+										fill="currentColor"
+										d="M2 14.7v34.4l17.2-17.5L2 14.7zm42.8 16.9L62 49.1V14.7L44.8 31.6z"
+									></path>
+									<path
+										data-name="layer2"
+										fill="currentColor"
+										d="M59.1 12H5l27 26.6L59.1 12z"
+									></path>
+									<path
+										data-name="layer1"
+										fill="currentColor"
+										d="M32 44.2l-10-9.8L4.7 52h54.6L42 34.4l-10 9.8z"
+									></path>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 64 64"
+									xmlns:xlink="http://www.w3.org/1999/xlink"
+									class="mail-filled"
+								>
+									<title>Email us here</title>
+									<path
+										data-name="layer2"
+										fill="currentColor"
+										d="M45.2 42.2L62 59.1V30.6L45.2 42.2zM2 30.2v28.9l16.8-16.9L2 30.2zm22.3 12.1L4.8 62h54.4L39.7 42.3c-3.2-3.1-12.2-3.1-15.4 0zM58 24.6v3.9l2.5-1.8-2.5-2.1zm-52 0l-2.3 1.9L6 28.1v-3.5z"
+									></path>
+									<path
+										data-name="layer1"
+										d="M42.2 39.3L54 31.2V2H10v29.2l11.6 8.1c4.8-4.4 15.9-4.4 20.6 0zM46 22H24v-4h22zM18 10h10v4H18zm0 16h28v4H18z"
+										fill="currentColor"
+									></path>
+								</svg>
+								<a href="mailto:support@zzone.com">
+									<span>support@zzone.com</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="social-links">
+						<ul>
+							<li>
+								<a href="#" class="facebook-icon">
+									<svg
+										version="1.1"
+										id="Layer_1"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										x="0px"
+										y="0px"
+										viewBox="0 0 40 40"
+										style="enable-background: new 0 0 40 40"
+										xml:space="preserve"
+									>
+										<style type="text/css">
+											.st0 {
+												fill: currentColor;
+											}
+											.st1 {
+												fill: #ffffff;
+											}
+										</style>
+										<title>Facebook</title>
+										<linearGradient
+											id="SVGID_1_"
+											gradientUnits="userSpaceOnUse"
+											x1="-277.375"
+											y1="406.6018"
+											x2="-277.375"
+											y2="407.5726"
+											gradientTransform="matrix(40 0 0 -39.7778 11115.001 16212.334)"
+										>
+											<stop offset="0" style="stop-color: #0062e0" />
+											<stop offset="1" style="stop-color: #19afff" />
+										</linearGradient>
+										<path
+											class="st0"
+											d="M16.7,39.8C7.2,38.1,0,29.9,0,20C0,9,9,0,20,0s20,9,20,20c0,9.9-7.2,18.1-16.7,19.8l-1.1-0.9h-4.4L16.7,39.8z"
+										/>
+										<path
+											class="st1"
+											d="M27.8,25.6l0.9-5.6h-5.3v-3.9c0-1.6,0.6-2.8,3-2.8h2.6V8.2c-1.4-0.2-3-0.4-4.4-0.4c-4.6,0-7.8,2.8-7.8,7.8V20h-5v5.6h5v14.1c1.1,0.2,2.2,0.3,3.3,0.3c1.1,0,2.2-0.1,3.3-0.3V25.6H27.8z"
+										/>
+									</svg>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="twitter-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 64 64"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+									>
+										<title>Twitter</title>
+										<path
+											data-name="layer1"
+											d="M64 13.194a23.1 23.1 0 0 1-7.3 2.1 14.119 14.119 0 0 0 5.5-7.2c-1.9 1.2-6.1 2.9-8.2 2.9a13.782 13.782 0 0 0-9.6-4 13.187 13.187 0 0 0-13.2 13.2 13.576 13.576 0 0 0 .3 2.9c-9.9-.3-21.5-5.2-28-13.7a13.206 13.206 0 0 0 4 17.4c-1.5.2-4.4-.1-5.7-1.4-.1 4.6 2.1 10.7 10.2 12.9-1.6.8-4.3.6-5.5.4.4 3.9 5.9 9 11.8 9-2.1 2.4-9.3 6.9-18.3 5.5a39.825 39.825 0 0 0 20.7 5.8 36.8 36.8 0 0 0 37-38.6v-.5a22.861 22.861 0 0 0 6.3-6.7z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="github-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 64 64"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+									>
+										<title>GitHub</title>
+										<path
+											data-name="layer2"
+											d="M32 0a32.021 32.021 0 0 0-10.1 62.4c1.6.3 2.2-.7 2.2-1.5v-6c-8.9 1.9-10.8-3.8-10.8-3.8-1.5-3.7-3.6-4.7-3.6-4.7-2.9-2 .2-1.9.2-1.9 3.2.2 4.9 3.3 4.9 3.3 2.9 4.9 7.5 3.5 9.3 2.7a6.93 6.93 0 0 1 2-4.3c-7.1-.8-14.6-3.6-14.6-15.8a12.27 12.27 0 0 1 3.3-8.6 11.965 11.965 0 0 1 .3-8.5s2.7-.9 8.8 3.3a30.873 30.873 0 0 1 8-1.1 30.292 30.292 0 0 1 8 1.1c6.1-4.1 8.8-3.3 8.8-3.3a11.965 11.965 0 0 1 .3 8.5 12.1 12.1 0 0 1 3.3 8.6c0 12.3-7.5 15-14.6 15.8a7.746 7.746 0 0 1 2.2 5.9v8.8c0 .9.6 1.8 2.2 1.5A32.021 32.021 0 0 0 32 0z"
+											fill="currentColor"
+										></path>
+										<path
+											data-name="layer1"
+											d="M12.1 45.9c-.1.2-.3.2-.5.1s-.4-.3-.3-.5.3-.2.6-.1c.2.2.3.4.2.5zm1.3 1.5a.589.589 0 0 1-.8-.8.631.631 0 0 1 .7.1.494.494 0 0 1 .1.7zm1.3 1.8a.585.585 0 0 1-.7-.3.6.6 0 0 1 0-.8.585.585 0 0 1 .7.3c.2.3.2.7 0 .8zm1.7 1.8c-.2.2-.5.1-.8-.1-.3-.3-.4-.6-.2-.8a.619.619 0 0 1 .8.1.554.554 0 0 1 .2.8zm2.4 1c-.1.3-.4.4-.8.3s-.6-.4-.5-.7.4-.4.8-.3c.3.2.6.5.5.7zm2.6.2c0 .3-.3.5-.7.5s-.7-.2-.7-.5.3-.5.7-.5c.4.1.7.3.7.5zm2.4-.4q0 .45-.6.6a.691.691 0 0 1-.8-.3q0-.45.6-.6c.5-.1.8.1.8.3z"
+										></path>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="contact-form">
+					<h2>Send us a message</h2>
+					<form action="#" method="GET">
+						<div class="name-wrapper">
+							<div class="form-input-wrapper">
+								<label for="first-name"
+									>First Name<span class="required">*</span></label
+								>
+								<input id="first-name" type="text" name="first-name" required />
+							</div>
+
+							<div class="form-input-wrapper">
+								<label for="last-name"
+									>Last Name<span class="required">*</span></label
+								>
+								<input id="last-name" type="text" name="last-name" required />
+							</div>
+						</div>
+
+						<div class="sender-contact-wrapper">
+							<div class="form-input-wrapper">
+								<label for="email">Email<span class="required">*</span></label>
+								<input id="email" type="email" name="email" required />
+							</div>
+
+							<div class="form-input-wrapper">
+								<label for="phone"
+									>Phone<span class="apart">(optional)</span></label
+								>
+								<input id="phone" type="tel" name="phone" />
+							</div>
+						</div>
+
+						<div class="form-input-wrapper subject">
+							<label for="subject"
+								>Subject<span class="required">*</span></label
+							>
+							<input id="subject" type="text" name="subject" required />
+						</div>
+
+						<div class="form-input-wrapper message">
+							<label for="message"
+								>Message<span class="required">*</span
+								><span class="apart">Max. 500 characters</span></label
+							>
+							<textarea
+								id="message"
+								name="message"
+								cols="50"
+								rows="10"
+								maxlength="500"
+								minlength="3"
+								required
+							></textarea>
+						</div>
+
+						<div class="submit-btn">
+							<button type="submit">Submit</button>
+						</div>
+					</form>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p><small>&copy; 2023 Zubair Jamil. All rights reserved.</small></p>
+		</footer>
+	</body>
+</html>

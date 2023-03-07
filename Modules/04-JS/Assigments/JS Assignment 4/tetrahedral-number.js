@@ -3,6 +3,7 @@
 // tetra(2) ➞ 4
 // tetra(5) ➞ 35
 // tetra(6) ➞ 56
+// https://en.wikipedia.org/wiki/Tetrahedral_number
 
 function tetra(n) {
 	// your code

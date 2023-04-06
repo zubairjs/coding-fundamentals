@@ -60,7 +60,7 @@ function validateGeneration(x, y) {
 	if (!x && !y) error.push("Error: Please input parameters (x, y).");
 	if (typeof x !== "number") {
 		error.push(
-			"Error: The first parameter must be a number between -3 to 3 (inclusive)."
+			"Error: The first parameter(x) must be a number between -3 to 3 (inclusive)."
 		);
 	}
 	if (x > 3 || x < -3) {
@@ -92,11 +92,11 @@ console.log(generation(-2, "f")); // "grandmother"
 
 console.log(generation());
 // Error: Please input parameters (x, y).
-// Error: The first parameter must be a number between -3 to 3 (inclusive).
+// Error: The first parameter(x) must be a number between -3 to 3 (inclusive).
 // Error: The second parameter(y) must be either "m" or "f".
 
 console.log(generation("a", 3));
-// Error: The first parameter must be a number between -3 to 3 (inclusive).
+// Error: The first parameter(x) must be a number between -3 to 3 (inclusive).
 // Error: The second parameter(y) must be either "m" or "f".
 
 console.log(generation(4, "m")); // "Error: The first parameter(x) is outside the range (-3 <= x <= 3)."
@@ -105,5 +105,5 @@ console.log(generation(0, "t")); // `Error: The second parameter(y) must be eith
 console.log(generation(0, 1)); // `Error: The second parameter(y) must be either "m" or "f".`
 
 console.log(generation("0", 1));
-// Error: The first parameter must be a number between -3 to 3 (inclusive).
+// Error: The first parameter(x) must be a number between -3 to 3 (inclusive).
 // Error: The second parameter(y) must be either "m" or "f".

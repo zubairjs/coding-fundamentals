@@ -21,13 +21,13 @@
 // ) ➞ 10
 
 // Pseudocode:
-// Get the periods from epoch to both dates in milliseconds
+// Get the periods since ECMAScript epoch to both dates in milliseconds
 // Get the difference between the two periods
 // Convert from milliseconds to days
 
 // Explicitly calling the getTime() method on the Date object
 // function getDays(startDate, endDate = new Date()) {
-// 	if (!startDate) return "Error: Please enter at least one or two dates";
+// 	if (!startDate) return "Error: Please input exactly one or two dates";
 // 	const millisecondsBetween = Math.abs(endDate.getTime() - startDate.getTime());
 // 	return Math.floor(millisecondsBetween / 24 / 60 / 60 / 1000);
 // }
@@ -37,15 +37,15 @@
 // Convert from milliseconds to days
 
 // Explicitly calling the valueOf() method on the Date object
-// function getDays(startDate, endDate) {
-// 	if (!startDate) return "Error: Please enter at least one or two dates.";
+// function getDays(startDate, endDate = new Date()) {
+// 	if (!startDate) return "Error: Please input exactly one or two dates.";
 // 	const millisecondsBetween = Math.abs(endDate.valueOf() - startDate.valueOf());
 // 	return Math.floor(millisecondsBetween / 24 / 60 / 60 / 1000);
 // }
 
 // Implicitly calling the valueOf() method on the Date object
-function getDays(startDate, endDate) {
-	if (!startDate) return "Error: Please enter at least one or two dates.";
+function getDays(startDate, endDate = new Date()) {
+	if (!startDate) return "Error: Please input exactly one or two dates.";
 	const millisecondsBetween = Math.abs(endDate - startDate);
 	return Math.floor(millisecondsBetween / 24 / 60 / 60 / 1000);
 }
@@ -53,13 +53,13 @@ function getDays(startDate, endDate) {
 // Test Cases
 console.log(
 	getDays(new Date("June 14, 2019"), new Date("June 20, 2019")) === 6
-);
+); // true
 console.log(
 	getDays(new Date("December 29, 2018"), new Date("January 1, 2019")) === 3
-);
+); // true
 console.log(
 	getDays(new Date("July 20, 2019"), new Date("July 30, 2019")) === 10
-);
+); // true
 
 console.log(getDays(new Date("June 14, 2019"), new Date("June 20, 2019"))); // 6
 console.log(
@@ -88,9 +88,8 @@ console.log(
 	getDays(new Date("August 31, 1957"), new Date("September 16, 1963")),
 	"days"
 ); // 2207 days
-console.log(getDays(new Date("August 31, 1957"), new Date()), "days"); //
-console.log(getDays()); // "Error: Please enter at least one or two dates."
-
+console.log(getDays(new Date("August 31, 1957"), new Date()), "days"); // Logs days since August 31, 1957
+console.log(getDays()); // "Error: Please input exactly one or two dates."
 console.log(
 	getDays(new Date("August 30, 1568"), new Date("September 4, 1568")),
 	"days"

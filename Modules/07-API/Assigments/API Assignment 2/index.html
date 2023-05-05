@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Assignment 2 - GitHub User Search</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Search GitHub User</h1>
+
+    <form class="search-box">
+      <input id="username" type="text" placeholder="username..." />
+
+      <button id="get-button" type="button">Get User</button>
+    </form>
+
+    <div class="user-container">
+      <div class="pending-search">
+        <div class="user-profile">
+          <h2 class="user-heading">
+            <img
+              class="placeholder-heading"
+              src="./image/github.svg"
+              alt="placeholder image"
+            />
+          </h2>
+        </div>
+      </div>
+
+      <div class="on-search hidden">
+        <div class="user-avatar-container">
+          <img class="user-avatar" src="#" alt="" />
+        </div>
+
+        <div class="user-profile">
+          <h2 class="user-heading">
+            <a class="user-name" href="#" target="_blank"></a>
+          </h2>
+
+          <p class="bio"></p>
+
+          <p class="joined-date"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

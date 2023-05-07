@@ -1,0 +1,166 @@
+:root {
+  --primary-grey: #161b22;
+  --primary-green: #238636;
+  --secondary-green: #2ea043;
+}
+
+* {
+  font: 100% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--primary-grey);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 1rem;
+  font-size: 300%;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #e1e1e1;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  background-color: var(--primary-green);
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #ffffffdd;
+  background-color: var(--secondary-green);
+}
+
+.bio {
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 1px solid var(--secondary-green);
+  border-radius: 5px;
+  text-align: center;
+  color: #f1f1f8;
+  transition: all 1s ease-in 0ms;
+}
+
+#name {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+#age {
+  font-size: 110%;
+}
+
+#hobbies {
+  padding: 0;
+}
+
+#hobbies li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+/* ---------------------------------- */
+/* Animation */
+/* ---------------------------------- */
+
+/* Zoom Out Animation */
+
+.zoom-out {
+  animation: zoom-out 1.5s ease-in-out 0s;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(0.1, 0.1);
+  }
+  80% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+#name {
+  overflow: hidden;
+  border-right: 0.15em solid #e9a424;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.01em;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* fade-in-up Animation */
+
+@keyframes fade-in-up {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+#age,
+.likes,
+.hobby {
+  animation: fade-in-up 1s both;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.likes {
+  animation-delay: 2s;
+}
+
+.hobby {
+  animation-delay: 3s;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,88 @@
+Final Assignment & Project Part 1
+
+Open Ended Answer
+
+1. Why do we need a loop? How do you write a basic for loop?
+
+We can use loops to run some code over and over again. Loops are great for doing this faster and easier without writing the same code many times. In programming language like JavaScript, there are different kinds of loops, its most basic form is for loop.
+
+A for loop lets you repeat some code a certain number of times. It has three parts: initialization, condition, and increment. For example:
+
+for (let  i = 0; i < 5; i++) {
+  let name = 'Giovanni Giorgio';
+  console.log(`My name is ${name}`)
+}
+
+Output:
+My name is Giovanni Giorgio
+My name is Giovanni Giorgio
+My name is Giovanni Giorgio
+My name is Giovanni Giorgio
+My name is Giovanni Giorgio
+
+In this example, we use condition (i < 5) to tell the loop to repeat five times. Each time, it does something with the variable i, which starts from 0 (initialization) (i = 0) and goes up to 4 (i < 5) by incrementing it by 1 each time (i++). What happens inside the loop every time it runs is we log the string with our name variable to the console as defined in the statement nested inside the loop.
+
+2. Difference between console.log() and return?
+
+console.log() is a way to talk with the computer. We can use it to show something on the screen that helps us debug our code. For example, console.log('Hello, world!') will print 'Hello, world!' in the console.
+
+return is a way of saying what a function does. When we call a function, we usually want to get some value from it. That value is the return value. For example:
+
+function sum(a, b) {
+  return a + b;
+}
+
+sum(5, 2); // will return 7
+
+In this example, we have a function called sum that takes two numbers as its parameters (a, b) and adds them together, we can use return to give the answer. So if we write return a + b;, it means we are sending the sum of a and b back to where we called the function.
+
+In short, console.log() is like talking to ourself. We can say anything we want and see it on the screen. It helps us check if our code is working or not.
+return is like answering a question. We can only say one thing and it has to be related to the question. It helps us get a value from a function.
+
+3. What are truthy values, What are falsy values?
+
+When we write code, sometimes we need to check if a value is true or false. For example, we might want to do something only if a condition is true. But not all values are just true or false. Some values are truthy and some are falsy. That means they act like true or false in some situations, even if they are not exactly the same.
+
+For example, in JavaScript, the number 0 is falsy and the number 1 is truthy. So if we use them in a statement, they will behave like false and true, respectively.
+
+Basically, truthy values are anything that is not falsy.
+
+In JavaScript, some examples of truthy values are:
+
+The number 23
+The string 'Hello World!'
+An array with elements in it, like [1, 2, 3, 4, 5]
+An object, like { name: 'Leo', age: 35 }
+The boolean true
+
+falsy values in JavaScript are:
+
+false, 0, -0, 0n, '', null, undefined, and NaN
+
+4. How does the internet work?
+
+The internet is like a bunch of roads that go to different places. We use it to send messages or see websites. Our computer takes an information and splits it into small bits called data packets. They are like pieces of a letter. Then, they go  through the internet on the roads or network cables to get to another computer.
+
+The other computer gets the packets and puts them back together to make the message. It is like our friend getting all the pieces of the letter and reading it.
+
+When we go on the internet, we are actually going on a network that is from an internet service provider (ISP). They have the big server and connections that let our computer talk to other computers on the internet.
+
+The internet is not owned by one person or group. It is made up of lots of computers and networks that work together. They belong to different companies, governments, and groups. They all follow some rules called protocols to make sure the packets can go from one place to another.
+
+To summarize, the internet is like a big network of roads that connect computers together. It allows us to send messages, look at websites, and do other useful things. It is made up of many different computers and networks that follow rules to make sure everything works smoothly.
+
+5. How does a website work? What files are involved?
+
+A website is like a bunch of different files that work together to show stuff and do things on the internet. It is like a recipe book that have many different recipes.
+
+One important file is the  HTML file. It is like the main recipe that tells our computer what contents the website should show. It has all the words, pictures, and links that we see on a webpage. It is written in a language called HyperText Markup Language (HTML).
+
+Another file is the CSS file. It's like the decoration or the style for the website. It makes things look nice, like changing the background, colors, modifying borders, and making things bigger or smaller. It's written in another language called Cascading Style Sheets (CSS).
+
+There are also JavaScript files. They are like the instructions that make things happen on the website when we interact with it. For example, when we click a button and something pops up, or when we fill out a form and it gets sent to someone, JavaScript helps with all of that. It is written in yet another language called JavaScript.
+
+These files, along with other files likes images, videos, and fonts, are stored on a computer called a server. When we visit a website, our computer asks the server for all of these files, and then our computer puts them together to show us the website on our screen.
+
+To make website live on the internet, these files need to be sent to a server. It is like sending all the recipes to a restaurant so that they can cook the food for us. Once the files are sent, we can access the website by typing in the website address in their browser.
+
+So in short, a website is made up of different files like HTML, CSS, and JavaScript. These files work together to show us the website and make things happen in our sceen. These files are sent to a server so that people can access the website on the internet.
